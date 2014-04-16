@@ -1,8 +1,5 @@
 package none.rg.springblank.models;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlRootElement(name="Group")
 public class Group {
 
     private int id;

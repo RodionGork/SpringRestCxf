@@ -42,7 +42,8 @@ public class FakeDao implements Dao {
         return list;
     }
 
-    private int addGroup(String name) {
+    @Override
+    public int addGroup(String name) {
         Group g = new Group();
         g.setId(groups.size() + 1);
         g.setName(name);
@@ -50,7 +51,8 @@ public class FakeDao implements Dao {
         return g.getId();
     }
 
-    private int addProduct(String name, int groupId) {
+    @Override
+    public int addProduct(String name, int groupId) {
         Product p = new Product();
         p.setId(products.size() + 1);
         p.setTitle(name);

@@ -9,5 +9,7 @@ public interface Dao {
 
     public List<Group> getGroups();
     public List<Product> getProductsByGroupId(int groupId);
+    public int addGroup(String name);
 
+    int addProduct(String name, int groupId);
 }
